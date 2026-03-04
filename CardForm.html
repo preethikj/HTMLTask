@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aadhar Card Form</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 350px;
+            height: 225px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .card h3 {
+            text-align: center;
+            margin: 5px 0 10px;
+            color: #d32f2f;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 8px;
+        }
+
+        .form-group label {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .form-group input, select {
+            padding: 4px;
+            font-size: 12px;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row .form-group {
+            flex: 1;
+            justify-content: center;
+        }
+
+        .submit-btn {
+            margin-top: 8px;
+            text-align: center;
+        }
+
+        .submit-btn input {
+            padding: 6px 12px;
+            font-size: 12px;
+            background: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+
+    </style>
+</head>
+<body>
+<div class="card">
+    <h3>AADHAR CARD</h3>
+    <form>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Enter full name">
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label>DOB</label>
+                <input type="date">
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Aadhar Number</label>
+            <input type="text" maxlength="12" placeholder="XXXX XXXX XXXX">
+        </div>
+        <div class="submit-btn">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DefaultForm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 450px;
+            margin: 30px auto;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+      .form-group > label {
+            width: 130px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            flex: 1;
+            padding: 6px;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+      .submit-btn {
+            display: flex;
+            justify-content: center;
+        }
+        .submit-btn input {
+            padding: 8px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <div class="form-group">
+        <label>Name:</label>
+        <input type="text" value="Preethi">
+    </div>
+
+    <div class="form-group">
+        <label>Email:</label>
+        <input type="email" value="preethi@gmail.com">
+    </div>
+
+    <div class="form-group">
+        <label>Password:</label>
+        <input type="password" value="12345">
+    </div>
+
+    <div class="form-group">
+        <label>Age:</label>
+        <input type="number" value="25">
+    </div>
+
+    <div class="form-group">
+        <label>Date:</label>
+        <input type="date" value="2000-01-01">
+    </div>
+    <!-- Gender -->
+    <div class="form-group">
+        <label>Gender:</label>
+        <div class="radio-group">
+            <input type="radio" id="female" name="gender" checked>
+            <label for="female">Female</label>
+
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="form-group">
+        <label>Skills:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="html" checked>
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" checked>
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="java">
+            <label for="java">Java</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Country:</label>
+        <select>
+            <option>India</option>
+            <option selected>USA</option>
+            <option>UK</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Address:</label>
+        <textarea rows="3">Bangalore, India</textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Upload:</label>
+        <input type="file">
+    </div>
+
+    <div class="submit-btn">
+        <input type="submit" value="Submit Form">
+    </div>
+
+</form>
+</body>
+</html>
